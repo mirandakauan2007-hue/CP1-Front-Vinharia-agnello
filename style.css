@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #5c0a0a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* TEXTO */
+p {
+    line-height: 1.5;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-media {
+    width: 350px;
+}
+
+/* VIDEO */
+.video {
+    width: 100%;
+    max-width: 560px;
+}
+
+/* PRODUTOS */
+.produtos-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #5c0a0a;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #5c0a0a;
+    color: white;
+    padding: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produtos-container {
+        flex-direction: column;
+    }
+
+}

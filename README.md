@@ -23,8 +23,11 @@ O projeto foi desenvolvido como atividade acadêmica, com foco em:
 	•	Git e GitHub
 
   #Integrantes
-  kauã - rm:569473
-  murilo - rm:573517
-  isadora - rm:569585
-  enrico - rm:562384
-    
+  Kauã - RM:569473
+  Murilo - RM:573517
+  Isadora - RM:569585
+  Enrico - RM:562384
+
+_______
+
+Git Hub Pages: 

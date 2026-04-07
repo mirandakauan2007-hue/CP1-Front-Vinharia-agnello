@@ -30,4 +30,4 @@ O projeto foi desenvolvido como atividade acadêmica, com foco em:
 
 _______
 
-Git Hub Pages: 
+Git Hub Pages: https://mirandakauan2007-hue.github.io/CP1-Front-Vinharia-agnello/

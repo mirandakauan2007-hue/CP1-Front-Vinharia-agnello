@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinharia Agnello - Home</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinharia Agnello - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/efeitos.css">
 </head>
 
 <body>
 
-<header>
-<h1>Vinharia Agnello</h1>
+  <header>
+    <h1 class="logo">Vinharia Agnello</h1>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="pages/historia.html">História</a>
-<a href="pages/produtos.html">Produtos</a>
-<a href="pages/galeria.html">Galeria</a>
-<a href="pages/contato.html">Contato</a>
-</nav>
-</header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/historia.html">História</a>
+      <a href="pages/produtos.html">Produtos</a>
+      <a href="pages/galeria.html">Galeria</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
 
-<section>
-<h2>Bem-vindo à Vinharia Agnello</h2>
+    <!-- HERO: gradiente + animação entradaHero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="secao-titulo">Bem-vindo à Vinharia Agnello</h2>
+        <p>Descubra o verdadeiro sabor do vinho, com tradição e qualidade em cada taça.</p>
+        <a href="pages/produtos.html" class="btn btn-primario">Ver Produtos</a>
+      </div>
+    </section>
 
-<p>Descubra o verdadeiro sabor do vinho...</p>
-</section>
+    <!-- VÍDEO -->
+    <section class="secao-destaque">
+      <div>
+        <h2 class="secao-titulo">Conheça nossa essência</h2>
+        <p>Uma jornada pelo universo dos vinhos artesanais da família Agnello.</p>
+      </div>
+      <iframe class="video icone-vinho"
+        src="https://www.youtube.com/embed/JxpYD-WLfcs"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-<section>
-<h2>Conheça nossa essência</h2>
+    <!-- LISTA DE DIFERENCIAIS -->
+    <section style="padding: 3rem 2rem;">
+      <h2 class="secao-titulo">Por que escolher?</h2>
+      <ul class="lista-vinhos">
+        <li>🍷 Seleção especial</li>
+        <li>🍷 Qualidade garantida</li>
+        <li>🍷 Tradição</li>
+        <li>🍷 Atendimento diferenciado</li>
+      </ul>
+    </section>
 
-<iframe class="video"
-src="https://www.youtube.com/embed/JxpYD-WLfcs"
-allowfullscreen></iframe>
+    <!-- CARDS DE DESTAQUE -->
+    <section style="padding: 2rem;">
+      <h2 class="secao-titulo">Uma experiência única</h2>
+      <div class="grid-vinhos">
 
-</section>
+        <div class="card-vinho">
+          <img src="imgs/vinho02.webp" class="icone-vinho" alt="Vinho em destaque">
+          <h3>Vinho Tinto</h3>
+          <p>Encorpado, com notas de frutas vermelhas e taninos elegantes.</p>
+          <a href="pages/produtos.html" class="btn btn-primario">Saiba mais</a>
+        </div>
 
-<section>
-<h2>Por que escolher?</h2>
+        <div class="card-vinho">
+          <img src="imgs/vinho02.webp" class="icone-vinho" alt="Vinho branco">
+          <h3>Vinho Branco</h3>
+          <p>Leve e refrescante, perfeito para os dias quentes.</p>
+          <a href="pages/produtos.html" class="btn btn-primario">Saiba mais</a>
+        </div>
 
-<ul>
-<li>🍷 Seleção especial</li>
-<li>🍷 Qualidade garantida</li>
-<li>🍷 Tradição</li>
-<li>🍷 Atendimento diferenciado</li>
-</ul>
+        <div class="card-vinho">
+          <img src="imgs/vinho02.webp" class="icone-vinho" alt="Vinho rosé">
+          <h3>Vinho Rosé</h3>
+          <p>Delicado e aromático, com toque suave de frutas.</p>
+          <a href="pages/produtos.html" class="btn btn-primario">Saiba mais</a>
+        </div>
 
-</section>
+      </div>
+    </section>
 
-<section>
-<h2>Uma experiência única</h2>
+  </main>
 
-<img src="imgs/vinho02.webp">
-
-</section>
-
-</main>
-
-<footer>
-<p>© 2026 Vinharia Agnello</p>
-</footer>
+  <footer>
+    <p>© 2026 Vinharia Agnello</p>
+    <nav>
+      <a href="pages/historia.html">História</a>
+      <a href="pages/produtos.html">Produtos</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+  </footer>
 
 </body>
 </html>

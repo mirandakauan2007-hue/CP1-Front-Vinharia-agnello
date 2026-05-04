@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinharia Agnello - Galeria</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinharia Agnello - Galeria</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/efeitos.css">
 </head>
 
 <body>
 
-<header>
-<h1>Galeria</h1>
+  <header>
+    <h1 class="logo">Galeria</h1>
 
-<nav>
-<a href="../index.html">Home</a>
-<a href="historia.html">História</a>
-<a href="produtos.html">Produtos</a>
-<a href="galeria.html">Galeria</a>
-<a href="contato.html">Contato</a>
-</nav>
-</header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="historia.html">História</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
 
-<section class="galeria">
+    <section style="padding: 2rem;">
+      <h2 class="secao-titulo">Nossa Galeria</h2>
+      <p>Conheça os momentos e produtos que fazem parte da história da Vinharia Agnello.</p>
+    </section>
 
-<img src="../imgs/vinho01.jpg">
-  <br>
-<img src="../imgs/vinho02.webp">
-  <br>
-<img src="../imgs/vinho03.jpg">
+    <section class="grid-vinhos">
 
-</section>
+      <div class="card-vinho">
+        <img src="../imgs/vinho01.jpg" class="icone-vinho" alt="Vinho 1">
+        <h3>Vinho Tinto</h3>
+        <p>Encorpado e elegante.</p>
+      </div>
 
-</main>
+      <div class="card-vinho">
+        <img src="../imgs/vinho02.webp" class="icone-vinho" alt="Vinho 2">
+        <h3>Vinho Branco</h3>
+        <p>Leve e refrescante.</p>
+      </div>
 
-<footer>
-<p>© 2026 Vinharia Agnello</p>
-</footer>
+      <div class="card-vinho">
+        <img src="../imgs/vinho03.jpg" class="icone-vinho" alt="Vinho 3">
+        <h3>Vinho Rosé</h3>
+        <p>Delicado e aromático.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vinharia Agnello</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </footer>
 
 </body>
 </html>

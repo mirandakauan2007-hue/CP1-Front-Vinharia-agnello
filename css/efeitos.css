@@ -1,0 +1,187 @@
+/* ============================================
+   VINHARIA AGNELLO — efeitos.css
+   Versão simples: flexbox, gradientes e efeitos básicos
+   ============================================ */
+
+
+/* ==========================================
+   🎯 PSEUDO-CLASSES
+   ========================================== */
+
+/* 1️⃣ :hover — links do menu mudam de cor */
+nav a:hover {
+  color: #C4922A;
+  background: rgba(196, 146, 42, 0.15);
+}
+
+/* 2️⃣ :focus — campo de formulário com borda dourada */
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #C4922A;
+}
+
+/* 3️⃣ :nth-child — itens alternados da lista de vinhos */
+.lista-vinhos li:nth-child(odd) {
+  background: rgba(92, 26, 26, 0.06);
+}
+
+
+/* ==========================================
+   🎯 PSEUDO-ELEMENTOS
+   ========================================== */
+
+/* 1️⃣ ::before — traço decorativo antes dos títulos */
+.secao-titulo::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #C4922A;
+  margin-bottom: 0.6rem;
+}
+
+/* 2️⃣ ::after — ícone após a logo */
+.logo::after {
+  content: ' 🍷';
+}
+
+
+/* ==========================================
+   💫 ANIMAÇÃO COM @keyframes
+   ========================================== */
+
+/* Conteúdo do banner aparece subindo */
+@keyframes entradaHero {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: entradaHero 1s ease forwards;
+}
+
+
+/* ==========================================
+   🔄 TRANSIÇÕES SUAVES
+   ========================================== */
+
+/* Botões com transição suave */
+.btn {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #E8B84B;
+  transform: translateY(-3px);
+}
+
+/* Cards com transição */
+.card-vinho {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-vinho:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(92, 26, 26, 0.2);
+}
+
+
+/* ==========================================
+   🎢 TRANSFORMAÇÕES CSS
+   ========================================== */
+
+/* 1️⃣ scale() — imagem do card cresce no hover */
+.card-vinho img:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+/* 2️⃣ rotate() — ícone de vinho inclina no hover */
+.icone-vinho:hover {
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+}
+
+
+/* ==========================================
+   🎨 FLEXBOX + GRADIENTES (estilização geral)
+   ========================================== */
+
+/* Grade de cards com flexbox */
+.grid-vinhos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Cada card ocupa espaço igual */
+.card-vinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 4px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Banner com gradiente escuro sobre imagem */
+.hero {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(58, 15, 15, 0.85) 0%,
+      rgba(92, 26, 26, 0.55) 100%
+    ),
+    url('../assets/imgs/banner.jpg') center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 85vh;
+  padding: 2rem;
+}
+
+/* Faixa de rodapé com gradiente */
+footer {
+  background: linear-gradient(135deg, #3A0F0F 0%, #5C1A1A 100%);
+  color: #F5ECD7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+}
+
+/* Botão com gradiente dourado */
+.btn-primario {
+  background: linear-gradient(90deg, #C4922A, #E8B84B);
+  color: #3A0F0F;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Seção de destaque com gradiente lateral */
+.secao-destaque {
+  background: linear-gradient(to right, #F5ECD7 0%, #E8D9BE 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}

@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinharia Agnello - Contato</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinharia Agnello - Contato</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/efeitos.css">
 </head>
 
 <body>
 
-<header>
-<h1>Contato</h1>
+  <header>
+    <h1 class="logo">Contato</h1>
 
-<nav>
-<a href="../index.html">Home</a>
-<a href="historia.html">História</a>
-<a href="produtos.html">Produtos</a>
-<a href="galeria.html">Galeria</a>
-<a href="contato.html">Contato</a>
-</nav>
-</header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="historia.html">História</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
 
-<section>
+    <section style="padding: 3rem 2rem;">
+      <h2 class="secao-titulo">Fale Conosco</h2>
+      <p>Estamos prontos para te atender. Preencha o formulário abaixo.</p>
+    </section>
 
-<form>
+    <section class="secao-destaque">
 
-<label>Nome:</label>
-<input type="text" required>
+      <form style="display: flex; flex-direction: column; gap: 1rem; flex: 1; max-width: 600px;">
 
-<label>Email:</label>
-<input type="email" required>
+        <label>Nome:</label>
+        <input type="text" placeholder="Seu nome completo" required>
 
-<label>Mensagem:</label>
-<textarea required></textarea>
+        <label>Email:</label>
+        <input type="email" placeholder="seu@email.com" required>
 
-<button type="submit">Enviar</button>
+        <label>Mensagem:</label>
+        <textarea rows="5" placeholder="Escreva sua mensagem..." required></textarea>
 
-</form>
+        <button type="submit" class="btn btn-primario">Enviar Mensagem</button>
 
-</section>
+      </form>
 
-</main>
+      <div style="flex: 1; max-width: 400px;">
+        <h3 class="secao-titulo">Onde estamos</h3>
+        <ul class="lista-vinhos" style="list-style: none; padding: 0;">
+          <li>📍 Rua das Vinhas, 123 — São Paulo, SP</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>📧 contato@vinhariaagnello.com.br</li>
+          <li>🕐 Seg–Sex: 9h às 18h</li>
+        </ul>
+      </div>
 
-<footer>
-<p>©️ 2026 Vinharia Agnello</p>
-</footer>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vinharia Agnello</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+  </footer>
 
 </body>
 </html>

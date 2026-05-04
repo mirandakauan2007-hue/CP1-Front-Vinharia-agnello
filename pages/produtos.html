@@ -1,88 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Produtos</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinharia Agnello - Produtos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/efeitos.css">
 </head>
- 
+
 <body>
- 
-<header>
-<h1>Produtos</h1>
- 
-<nav>
-<a href="../index.html">Home</a>
-<a href="historia.html">História</a>
-<a href="produtos.html">Produtos</a>
-<a href="galeria.html">Galeria</a>
-<a href="contato.html">Contato</a>
-</nav>
-</header>
- 
-<main>
- 
-<section>
- 
-<h2>Nossos Vinhos</h2>
- 
-<table border="1">
- 
-<tr>
-<th>Nome</th>
-<th>Tipo</th>
-<th>Preço</th>
-</tr>
- 
-<tr>
-<td>Vinho Tinto</td>
-<td>Tinto</td>
-<td>R$ 120</td>
-</tr>
- 
-<tr>
-<td>Vinho Branco</td>
-<td>Branco</td>
-<td>R$ 100</td>
-</tr>
- 
-<tr>
-<td>Vinho Rosé</td>
-<td>Rosé</td>
-<td>R$ 90</td>
-</tr>
- 
-<tr>
-<td>Espumante</td>
-<td>Espumante</td>
-<td>R$ 200</td>
-</tr>
- 
-<tr>
-<td>Colheita Tardia</td>
-<td>Doce</td>
-<td>R$ 90</td>
-</tr>
- 
-<tr>
-<td>Vinho do Porto</td>
-<td>Fortificado</td>
-<td>R$ 130</td>
-</tr>
- 
-<tr>
-<td>Porto Especial</td>
-<td>Fortificado Premium</td>
-<td>R$ 250</td>
-</tr>
- 
-</table>
- <BR>
-<img src="../imgs/vinho03.jpg">
- 
-</section>
- 
-</main>
- 
+
+  <header>
+    <h1 class="logo">Produtos</h1>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="historia.html">História</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section style="padding: 3rem 2rem;">
+      <h2 class="secao-titulo">Nossos Vinhos</h2>
+      <p>Conheça nossa seleção exclusiva, com rótulos para todos os paladares.</p>
+    </section>
+
+    <section class="secao-destaque">
+
+      <div style="flex: 1;">
+        <table style="width: 100%; border-collapse: collapse;">
+
+          <tr>
+            <th style="padding: 0.8rem; text-align: left; border-bottom: 2px solid #C4922A;">Nome</th>
+            <th style="padding: 0.8rem; text-align: left; border-bottom: 2px solid #C4922A;">Tipo</th>
+            <th style="padding: 0.8rem; text-align: left; border-bottom: 2px solid #C4922A;">Preço</th>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">🍷 Vinho Tinto</td>
+            <td style="padding: 0.8rem;">Tinto</td>
+            <td style="padding: 0.8rem;">R$ 120</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">🥂 Vinho Branco</td>
+            <td style="padding: 0.8rem;">Branco</td>
+            <td style="padding: 0.8rem;">R$ 100</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">🌸 Vinho Rosé</td>
+            <td style="padding: 0.8rem;">Rosé</td>
+            <td style="padding: 0.8rem;">R$ 90</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">✨ Espumante</td>
+            <td style="padding: 0.8rem;">Espumante</td>
+            <td style="padding: 0.8rem;">R$ 200</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">🍯 Colheita Tardia</td>
+            <td style="padding: 0.8rem;">Doce</td>
+            <td style="padding: 0.8rem;">R$ 90</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">🍇 Vinho do Porto</td>
+            <td style="padding: 0.8rem;">Fortificado</td>
+            <td style="padding: 0.8rem;">R$ 130</td>
+          </tr>
+
+          <tr class="lista-vinhos">
+            <td style="padding: 0.8rem;">👑 Porto Especial</td>
+            <td style="padding: 0.8rem;">Fortificado Premium</td>
+            <td style="padding: 0.8rem;">R$ 250</td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="../imgs/vinho03.jpg" class="icone-vinho" alt="Vinho Agnello"
+          style="max-width: 320px; border-radius: 4px;">
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Vinharia Agnello</p>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
